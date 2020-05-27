@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 import Home from "./HomeComponent";
 import Code from "./CodeComponent";
+import Design from "./DesignComponent";
+import About from "./AboutComponent";
+import Contact from "./ContactComponent";
 
 
 class Main extends Component {
@@ -14,9 +17,9 @@ class Main extends Component {
             <>
                 <Home/>
                 <Code/>
-                {/*<Design />*/}
-                {/*<About />*/}
-                {/*<Contact />*/}
+                <Design />
+                <About />
+                <Contact />
             </>
         )
 
