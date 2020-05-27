@@ -1,0 +1,41 @@
+@import "mixins"
+
+.homeBackgroundImage
+  @include pageSections
+  background-image: url("https://images.pexels.com/photos/2194062/pexels-photo-2194062.jpeg")
+  background-size: cover
+  background-position: center
+  //filter: grayscale(100%)
+
+.homeBackgroundOverlay
+  background: linear-gradient(90deg, rgba(73,128,147,0.9) 0%, rgba(95,44,130,0.9) 100%)
+  width: 100%
+  height: 100%
+
+  .homeTextWrapper
+    top: 50%
+    transform: translateY(-50%)
+    padding: 0 10vw 0 10vw
+    position: absolute
+    h1
+      font-size: 8em
+      color: #ffffff
+      margin: 0
+    h3
+      font-size: 2em
+      color: #ffffff
+      margin-top: .5em
+      margin-bottom: 0
+    h5
+      font-size: 1em
+      color: #ffffff
+      margin-top: 2em
+      margin-bottom: 0
+      width: 40%
+
+
+
+
+
+
+

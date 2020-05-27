@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Lato:wght@300;400;900&display=swap");
+.homeBackgroundImage {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/2194062/pexels-photo-2194062.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.homeBackgroundOverlay {
+  background: linear-gradient(90deg, rgba(73, 128, 147, 0.9) 0%, rgba(95, 44, 130, 0.9) 100%);
+  width: 100%;
+  height: 100%;
+}
+.homeBackgroundOverlay .homeTextWrapper {
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10vw 0 10vw;
+  position: absolute;
+}
+.homeBackgroundOverlay .homeTextWrapper h1 {
+  font-size: 8em;
+  color: #ffffff;
+  margin: 0;
+}
+.homeBackgroundOverlay .homeTextWrapper h3 {
+  font-size: 2em;
+  color: #ffffff;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+.homeBackgroundOverlay .homeTextWrapper h5 {
+  font-size: 1em;
+  color: #ffffff;
+  margin-top: 2em;
+  margin-bottom: 0;
+  width: 40%;
+}
+
+.navLinks {
+  position: absolute;
+  list-style-type: none;
+  display: inline;
+  color: #ffffff;
+  bottom: 10%;
+  padding: 0vw 10vw 0vw 10vw;
+}
+.navLinks li {
+  float: left;
+  padding: 20px;
+}
+.navLinks li:first-child {
+  padding-left: 0px;
+}
+.navLinks li a {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: Josefin Sans;
+}
+.navLinks li .active {
+  border-bottom: #5C2751 solid 6px;
+}
+
+.codeBackground {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  background-color: #ffffff;
+}
+.codeBackground .navLinks {
+  color: #333333;
+}
+
+.codeContent {
+  padding: 0vw 10vw 0vw 10vw;
+}
+.codeContent h2 {
+  padding-top: 10vh;
+  margin: 0;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+h1, h2, h3, h4 {
+  font-family: Josefin Sans;
+}
+
+h5, p {
+  font-family: lato;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=style.css.map */
