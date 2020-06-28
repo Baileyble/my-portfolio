@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Nav from "./NavComponent";
+import DesignProjects from "./DesignProjectsComponent";
 
 class Design extends Component {
     constructor(props) {
@@ -11,10 +12,10 @@ class Design extends Component {
 
     render() {
         return (
-            <div className="designBackground">
+            <div className="designBackground" id="design">
                 <div className="designContent">
                     <h2>Design Projects</h2>
-                    {/*<Projects />*/}
+                    <DesignProjects />
                 </div>
                 <Nav activeLink={this.state.activeLink}/>
             </div>

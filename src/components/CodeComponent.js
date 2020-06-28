@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Nav from "./NavComponent";
+import CodeProjects from "./CodeProjectsComponent";
 
 class Code extends Component {
     constructor(props) {
@@ -11,10 +12,10 @@ class Code extends Component {
 
     render() {
         return (
-            <div className="codeBackground">
+            <div className="codeBackground" id="code">
                 <div className="codeContent">
                 <h2>Code Projects</h2>
-                {/*<Projects />*/}
+                <CodeProjects />
                 </div>
                 <Nav activeLink={this.state.activeLink}/>
             </div>

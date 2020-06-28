@@ -9,9 +9,50 @@
     color: $textColor
 
 .aboutContent
-  padding: 0vw 10vw 0vw 10vw
+  padding: 0 10vw 0 10vw
   h2
     padding-top: 10vh
     margin: 0
+
+.aboutContainer
+  position: absolute
+  top: 48%
+  transform: translateY(-50%)
+  display: flex
+  justify-content: space-between
+  width: 80%
+
+.aboutImage
+  width: 48%
+  height: 50vh
+  background-size: cover
+  background-position: center
+  display: flex
+
+.aboutText
+  display: flex
+  flex-direction: column
+  width: 48%
+  h3
+    font-size: 2.5em
+    color: $primaryBlue
+    margin-top: 2em
+
+  h5
+    font-size: 1.5em
+    font-family: Josefin Sans, sans-serif
+    font-weight: bold
+    color: #333333
+    a
+      border-bottom: $primaryBlue solid 6px
+      &:hover
+        border-bottom: $primaryPurple solid 6px
+
+
+  p
+    color: #333333
+
+
+
 
 

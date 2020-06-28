@@ -15,4 +15,63 @@
     padding-top: 10vh
     margin: 0
 
+.designProjectImg
+  height: 40vh
+  width: 100%
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+
+.designProjectsContainer
+  position: absolute
+  top: 50%
+  width: 80vw
+  transform: translateY(-50%)
+  display: flex
+  .designProjectList
+    display: flex
+    width: 50%
+    ul
+      padding: 0
+      li
+        color: white
+        list-style: none
+        margin-top: 1em
+        a
+          font-size: 2.7em
+          font-family: Josefin Sans, serif
+          &:hover
+            cursor: pointer
+            border-bottom: $primaryBlue solid 6px
+        .active
+          border-bottom: $secondaryPurple solid 6px
+          &:hover
+            cursor: default
+            border-bottom: $secondaryPurple solid 6px
+
+
+        
+
+  .designProjectContent
+    display: flex
+    width: 50%
+    flex-direction: column
+    height: 60vh
+    p
+      color: white
+    h4
+      color: white
+      margin: .5em 0
+      a
+        border-bottom: $secondaryPurple solid 6px
+        &:hover
+          cursor: pointer
+          border-bottom: $primaryBlue solid 6px
+
+
+
+
+
+
 

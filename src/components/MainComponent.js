@@ -15,8 +15,8 @@ class Main extends Component {
     render() {
         return (
             <>
-                <Home/>
-                <Code/>
+                <Home />
+                <Code />
                 <Design />
                 <About />
                 <Contact />

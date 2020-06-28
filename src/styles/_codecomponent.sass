@@ -5,13 +5,105 @@
 .codeBackground
   @include pageSections
   background-color: #ffffff
+  overflow: hidden
   .navLinks
     color: $textColor
 
 .codeContent
-  padding: 0vw 10vw 0vw 10vw
+  padding: 0 10vw 0 10vw
   h2
     padding-top: 10vh
     margin: 0
+
+  .codeProjectsContainer
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    .codeProjectWrapper
+      display: flex
+      position: relative
+      transition: left
+      -webkit-transition-property: left
+      -webkit-transition-duration: 0.5s
+      -webkit-transition-timing-function: ease-in-out
+      a
+        text-decoration: none
+        padding-right: 40px
+
+
+
+  .codeProjectImg
+    height: 50vh
+    width: 50vh
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    &:before
+      content: ""
+      background-image: inherit
+      -webkit-filter: grayscale(100%)
+      filter: grayscale(100%)
+
+
+    .codeProjectOverlay
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background-color: rgb(44, 42, 74, .8)
+      &:hover
+        background-color: rgb(44, 42, 74, .9)
+      h3
+        position: absolute
+        top: 50%
+        left: 10%
+        font-size: 2.5em
+        line-height: 1.45
+        color: #fff
+        span
+          -webkit-box-decoration-break: clone
+          box-decoration-break: clone
+          background: $secondaryPurple
+          padding: 5px
+
+  .codeProjectCTA
+    h3
+      color: #333333
+      font-size: 1.5em
+      span
+        border-bottom: $primaryBlue solid 6px
+        &:hover
+          border-bottom: $primaryPurple solid 6px
+
+  .codeProjectBtns
+    display: flex
+    button
+      background-color: #666666
+      padding: 8px 12px
+      font-size: 16px
+      margin-right: 10px
+      color: white
+      border: none
+      -webkit-appearance: none
+      text-decoration: none
+      outline: none
+    .active
+      background-color: $secondaryPurple
+      &:hover
+        background-color: $primaryPurple
+        cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
 
 

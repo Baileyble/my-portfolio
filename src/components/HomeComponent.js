@@ -11,7 +11,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="homeBackgroundImage">
+            <div className="homeBackgroundImage" id="home">
                 <div className="homeBackgroundOverlay">
                     <div className="homeTextWrapper">
                         <h1>Hi, I'm Bailey</h1>
