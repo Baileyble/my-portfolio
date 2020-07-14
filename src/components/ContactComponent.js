@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Nav from "./NavComponent";
+import NavDrawerButtonComponent from "./NavDrawerButtonComponent";
 
 class Contact extends Component {
     constructor(props) {
@@ -13,7 +14,13 @@ class Contact extends Component {
         return (
             <div className="contactBackground" id="contact">
                 <div className="contactContent">
-                    <h2>Contact Me</h2>
+                    <div className="contactHeader">
+                        <h2>Contact Me</h2>
+                        <div className="navWrapper">
+                            <NavDrawerButtonComponent click={this.props.navToggleClickHandler} />
+                        </div>
+                    </div>
+
                     <div className="contactContainer">
                         <h3>Like what you see?</h3>
 

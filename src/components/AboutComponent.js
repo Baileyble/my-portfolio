@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Nav from "./NavComponent";
+import NavDrawerButtonComponent from "./NavDrawerButtonComponent";
 
 class About extends Component {
     constructor(props) {
@@ -13,14 +14,21 @@ class About extends Component {
         return (
             <div className="aboutBackground" id="about">
                 <div className="aboutContent">
-                    <h2>About Me</h2>
+                    <div className="aboutHeader">
+                        <h2>About Me</h2>
+                        <div className="navWrapper">
+                            <NavDrawerButtonComponent click={this.props.navToggleClickHandler} />
+                        </div>
+                    </div>
+
+
                     <div className="aboutContainer">
                         <div className="aboutImage" style={{backgroundImage: "url(IMG_2186.JPG)"}}/>
                         <div className="aboutText">
                         <h3>Hi, I'm Bailey</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Velit ut tortor pretium viverra. Sit amet facilisis magna etiam tempor orci. In egestas erat imperdiet sed euismod nisi porta.</p>
+                        <p>I’m a Frontend Developer & Designer based out of NC. Originally starting as a UX Designer after attending Devmountain’s UX Design bootcamp, I have decided to transition into a Frontend Developer role becoming a jack of all trades when it comes to digital product development. Combining my experience with UX/UI skills such as user research, ideation and designing with my knowledge of HTML, CSS, JS & React to be able to create amazing digital experiences.</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <p class="secondParagraph" >Currently, I am working as a UX/UI Designer for Quintevents in Charlotte, NC. I am now searching for new opportunities as a Front-End Developer. </p>
 
                             <h5><a target="_blank" href="">Resume</a></h5>
                     </div>

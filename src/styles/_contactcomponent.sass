@@ -8,17 +8,26 @@
   .navLinks
     color: #ffffff
 
+.contactHeader
+  padding-top: 10vh
+
+
 .contactContent
   padding: 0 10vw 0 10vw
   h2
     color: #ffffff
-    padding-top: 10vh
     margin: 0
+    display: inline
+
 
   .contactContainer
     position: absolute
     top: 40%
     transform: translateY(-50%)
+    width: 80%
+    @media (max-width: #{$tablet-width})
+      top: 55%
+
 
 
 
@@ -26,11 +35,18 @@
       color: #ffffff
 
     h3
-      font-size: 2em
+      font-size: 1.8em
+      margin-bottom: .5em
+      @media (max-width: #{$tablet-width})
+        font-size: 1em
+
 
     h4
       margin-top: 0
       font-size: 1.5em
+      @media (max-width: #{$tablet-width})
+        font-size: 1em
+
       a
         border-bottom: $secondaryPurple solid 6px
         &:hover
@@ -45,9 +61,16 @@
 
     ul
       padding-left: 0
+      @media (max-width: #{$tablet-width})
+        margin: 0
+
 
 .mb2
   margin-bottom: 40px !important
+  @media (max-width: #{$tablet-width})
+    margin-bottom: 20px !important
+    font-size: .8em
+
 
 .contactColLeft
   float: left
@@ -55,3 +78,7 @@
 
 .contactColRight
   float: right
+  @media (max-width: #{$tablet-width})
+    float: left
+    margin-top: -16px
+

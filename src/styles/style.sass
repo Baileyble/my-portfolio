@@ -6,9 +6,11 @@
 @import "./_aboutcomponent"
 @import "./_contactcomponent"
 @import "./_colors"
+@import "mixins"
 
-//html
-  scroll-snap-type: y mandatory
+html
+  @media (max-width: #{$tablet-width})
+    scroll-snap-type: y mandatory
 body
   overscroll-behavior: none
 
@@ -20,9 +22,13 @@ h5, p
 
 h2
   font-size: 3em
+  @media (max-width: #{$tablet-width})
+    font-size: 2em
 
 h4
   font-size: 1.5em
+  @media (max-width: #{$tablet-width})
+    font-size: 1em
 
 a
   text-decoration: none

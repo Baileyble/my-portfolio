@@ -1,6 +1,8 @@
 @import "mixins"
 @import "./_colors"
 
+.homeHeader
+  padding: 10vh 10vw 0 10vw
 
 .homeBackgroundImage
   @include pageSections
@@ -31,17 +33,26 @@
       font-size: 8em
       color: #ffffff
       margin: 0
+      @media (max-width: #{$tablet-width})
+        font-size: 4.5em
+
     h3
       font-size: 2em
       color: #ffffff
       margin-top: .5em
       margin-bottom: 0
+      @media (max-width: #{$tablet-width})
+        font-size: 1.2em
+
     h5
       font-size: 1em
       color: #ffffff
       margin-top: 2em
       margin-bottom: 0
       width: 40%
+      @media (max-width: #{$tablet-width})
+        font-size: .8em
+        width: 100%
 
 
 

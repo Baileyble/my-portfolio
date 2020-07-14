@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Lato:wght@300;400;900&display=swap");
+.homeHeader {
+  padding: 10vh 10vw 0 10vw;
+}
+
 .homeBackgroundImage {
   height: 100vh;
   width: 100%;
@@ -32,11 +36,21 @@
   color: #ffffff;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .homeBackgroundOverlay .homeTextWrapper h1 {
+    font-size: 4.5em;
+  }
+}
 .homeBackgroundOverlay .homeTextWrapper h3 {
   font-size: 2em;
   color: #ffffff;
   margin-top: 0.5em;
   margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .homeBackgroundOverlay .homeTextWrapper h3 {
+    font-size: 1.2em;
+  }
 }
 .homeBackgroundOverlay .homeTextWrapper h5 {
   font-size: 1em;
@@ -44,6 +58,12 @@
   margin-top: 2em;
   margin-bottom: 0;
   width: 40%;
+}
+@media (max-width: 768px) {
+  .homeBackgroundOverlay .homeTextWrapper h5 {
+    font-size: 0.8em;
+    width: 100%;
+  }
 }
 
 .navLinks {
@@ -78,6 +98,82 @@
   cursor: default;
   border-bottom: #5C2751 solid 6px;
 }
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+.toggleButton {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 36px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.toggleButton:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .toggleButton {
+    display: flex;
+  }
+}
+
+.toggleButtonLine {
+  width: 36px;
+  height: 0.3em;
+  background: white;
+}
+
+.navWrapper {
+  float: right;
+  display: inline;
+}
+
+.navDrawer {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+}
+.navDrawer ul {
+  color: white;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  list-style: none;
+  padding: 0;
+}
+.navDrawer ul li {
+  padding: 1em 0;
+}
+.navDrawer ul a {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: Josefin Sans, sans-serif;
+  font-weight: bold;
+}
+.navDrawer ul a:hover {
+  cursor: pointer;
+  border-bottom: #41748C solid 6px;
+}
+.navDrawer ul .active {
+  border-bottom: #5C2751 solid 6px;
+}
+.navDrawer ul .active:hover {
+  cursor: default;
+  border-bottom: #5C2751 solid 6px;
+}
 
 .codeBackground {
   height: 100vh;
@@ -92,12 +188,21 @@
   color: #333333;
 }
 
+.codeHeader {
+  padding-top: 10vh;
+}
+.codeHeader .navWrapper .toggleButtonLine {
+  width: 36px;
+  height: 0.3em;
+  background: #333333;
+}
+
 .codeContent {
   padding: 0 10vw 0 10vw;
 }
 .codeContent h2 {
-  padding-top: 10vh;
   margin: 0;
+  display: inline;
 }
 .codeContent .codeProjectsContainer {
   position: absolute;
@@ -117,8 +222,8 @@
   padding-right: 40px;
 }
 .codeContent .codeProjectImg {
-  height: 50vh;
-  width: 50vh;
+  height: 48vh;
+  width: 48vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -129,6 +234,12 @@
   background-image: inherit;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+@media (max-width: 768px) {
+  .codeContent .codeProjectImg {
+    height: 36vh;
+    width: 36vh;
+  }
 }
 .codeContent .codeProjectImg .codeProjectOverlay {
   width: 100%;
@@ -155,6 +266,13 @@
   background: #5C2751;
   padding: 5px;
 }
+@media (max-width: 768px) {
+  .codeContent .codeProjectImg .codeProjectOverlay h3 {
+    font-size: 1.5em;
+    line-height: 1.8;
+    top: 40%;
+  }
+}
 .codeContent .codeProjectCTA h3 {
   color: #333333;
   font-size: 1.5em;
@@ -170,7 +288,7 @@
 }
 .codeContent .codeProjectBtns button {
   background-color: #666666;
-  padding: 8px 12px;
+  padding: 6px 8px;
   font-size: 16px;
   margin-right: 10px;
   color: white;
@@ -178,6 +296,12 @@
   -webkit-appearance: none;
   text-decoration: none;
   outline: none;
+}
+@media (max-width: 768px) {
+  .codeContent .codeProjectBtns button {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
 }
 .codeContent .codeProjectBtns .active {
   background-color: #5C2751;
@@ -204,8 +328,12 @@
 }
 .designContent h2 {
   color: #ffffff;
-  padding-top: 10vh;
   margin: 0;
+  display: inline;
+}
+
+.designHeader {
+  padding-top: 10vh;
 }
 
 .designProjectImg {
@@ -224,9 +352,19 @@
   transform: translateY(-50%);
   display: flex;
 }
+@media (max-width: 768px) {
+  .designProjectsContainer {
+    transform: translateY(-40%);
+  }
+}
 .designProjectsContainer .designProjectList {
   display: flex;
   width: 50%;
+}
+@media (max-width: 768px) {
+  .designProjectsContainer .designProjectList {
+    display: none;
+  }
 }
 .designProjectsContainer .designProjectList ul {
   padding: 0;
@@ -257,8 +395,21 @@
   flex-direction: column;
   height: 60vh;
 }
+@media (max-width: 768px) {
+  .designProjectsContainer .designProjectContent {
+    width: 100%;
+    height: 75vh;
+    justify-content: space-between;
+  }
+}
 .designProjectsContainer .designProjectContent p {
   color: white;
+}
+@media (max-width: 768px) {
+  .designProjectsContainer .designProjectContent p {
+    margin-top: 0.5em;
+    font-size: 0.8em;
+  }
 }
 .designProjectsContainer .designProjectContent h4 {
   color: white;
@@ -270,6 +421,52 @@
 .designProjectsContainer .designProjectContent h4 a:hover {
   cursor: pointer;
   border-bottom: #41748C solid 6px;
+}
+
+.mobileName {
+  display: none;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+@media (max-width: 768px) {
+  .mobileName {
+    display: block;
+  }
+}
+
+.designProjectBtns {
+  display: none;
+  margin-top: 1em;
+}
+@media (max-width: 768px) {
+  .designProjectBtns {
+    display: flex;
+  }
+}
+.designProjectBtns button {
+  background-color: #666666;
+  padding: 6px 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  color: white;
+  border: none;
+  -webkit-appearance: none;
+  text-decoration: none;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .designProjectBtns button {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+.designProjectBtns .active {
+  background-color: #5C2751;
+}
+.designProjectBtns .active:hover {
+  background-color: #41748C;
+  cursor: pointer;
 }
 
 .aboutBackground {
@@ -288,8 +485,17 @@
   padding: 0 10vw 0 10vw;
 }
 .aboutContent h2 {
-  padding-top: 10vh;
   margin: 0;
+  display: inline;
+}
+
+.aboutHeader {
+  padding-top: 10vh;
+}
+.aboutHeader .navWrapper .toggleButtonLine {
+  width: 36px;
+  height: 0.3em;
+  background: #333333;
 }
 
 .aboutContainer {
@@ -300,6 +506,13 @@
   justify-content: space-between;
   width: 80%;
 }
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+    justify-content: center;
+    top: 55%;
+  }
+}
 
 .aboutImage {
   width: 48%;
@@ -307,23 +520,49 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .aboutImage {
+    width: 100%;
+    height: 25vh;
+  }
 }
 
 .aboutText {
   display: flex;
   flex-direction: column;
   width: 48%;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .aboutText {
+    width: 100%;
+  }
 }
 .aboutText h3 {
   font-size: 2.5em;
   color: #41748C;
-  margin-top: 2em;
+}
+@media (max-width: 768px) {
+  .aboutText h3 {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
 }
 .aboutText h5 {
   font-size: 1.5em;
   font-family: Josefin Sans, sans-serif;
   font-weight: bold;
   color: #333333;
+}
+@media (max-width: 768px) {
+  .aboutText h5 {
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
 }
 .aboutText h5 a {
   border-bottom: #41748C solid 6px;
@@ -333,6 +572,17 @@
 }
 .aboutText p {
   color: #333333;
+}
+@media (max-width: 768px) {
+  .aboutText p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .secondParagraph {
+    display: none;
+  }
 }
 
 .contactBackground {
@@ -347,28 +597,49 @@
   color: #ffffff;
 }
 
+.contactHeader {
+  padding-top: 10vh;
+}
+
 .contactContent {
   padding: 0 10vw 0 10vw;
 }
 .contactContent h2 {
   color: #ffffff;
-  padding-top: 10vh;
   margin: 0;
+  display: inline;
 }
 .contactContent .contactContainer {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .contactContent .contactContainer {
+    top: 55%;
+  }
 }
 .contactContent .contactContainer h3, .contactContent .contactContainer h4, .contactContent .contactContainer h5, .contactContent .contactContainer p {
   color: #ffffff;
 }
 .contactContent .contactContainer h3 {
-  font-size: 2em;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+@media (max-width: 768px) {
+  .contactContent .contactContainer h3 {
+    font-size: 1em;
+  }
 }
 .contactContent .contactContainer h4 {
   margin-top: 0;
   font-size: 1.5em;
+}
+@media (max-width: 768px) {
+  .contactContent .contactContainer h4 {
+    font-size: 1em;
+  }
 }
 .contactContent .contactContainer h4 a {
   border-bottom: #5C2751 solid 6px;
@@ -385,9 +656,20 @@
 .contactContent .contactContainer ul {
   padding-left: 0;
 }
+@media (max-width: 768px) {
+  .contactContent .contactContainer ul {
+    margin: 0;
+  }
+}
 
 .mb2 {
   margin-bottom: 40px !important;
+}
+@media (max-width: 768px) {
+  .mb2 {
+    margin-bottom: 20px !important;
+    font-size: 0.8em;
+  }
 }
 
 .contactColLeft {
@@ -397,6 +679,18 @@
 
 .contactColRight {
   float: right;
+}
+@media (max-width: 768px) {
+  .contactColRight {
+    float: left;
+    margin-top: -16px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
 }
 
 body {
@@ -414,9 +708,19 @@ h5, p {
 h2 {
   font-size: 3em;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+}
 
 h4 {
   font-size: 1.5em;
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 1em;
+  }
 }
 
 a {
