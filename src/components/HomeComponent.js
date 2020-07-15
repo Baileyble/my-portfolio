@@ -7,7 +7,8 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeLink: "home"
+            activeLink: "home",
+            navDrawerOpen: false
         }
     }
 
@@ -16,23 +17,22 @@ class Home extends Component {
             (prevState) => {
                 return {navDrawerOpen: !prevState.navDrawerOpen}
             })
-
     }
 
     render() {
+        let navDrawerButtonComponent
 
-        let navDrawer
-
-        if (this.state.navDrawerOpen) {
-            navDrawer = <NavDrawer activeLink={this.state.activeLink} />
+        if(!this.state.navDrawerOpen) {
+            navDrawerButtonComponent = <NavDrawerButtonComponent click={this.navToggleClickHandler} />
         }
-
         return (
+            <>
+            <NavDrawer activeLink={this.state.activeLink} click={this.navToggleClickHandler} navDrawerOpen={this.state.navDrawerOpen} />
             <div className="homeBackgroundImage" id="home">
                 <div className="homeBackgroundOverlay">
                     <div className="homeHeader">
                         <div className="navWrapper">
-                            <NavDrawerButtonComponent click={this.props.navToggleClickHandler} />
+                            {navDrawerButtonComponent}
                         </div>
                     </div>
                     <div className="homeTextWrapper">
@@ -43,6 +43,7 @@ class Home extends Component {
                     <Nav activeLink={this.state.activeLink}/>
                 </div>
             </div>
+                </>
         )
     }
 }

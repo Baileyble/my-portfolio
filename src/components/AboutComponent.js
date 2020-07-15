@@ -1,23 +1,40 @@
 import React, {Component} from "react";
 import Nav from "./NavComponent";
 import NavDrawerButtonComponent from "./NavDrawerButtonComponent";
+import NavDrawer from "./NavDrawerComponent";
 
 class About extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeLink: "about"
+            activeLink: "about",
+            navDrawerOpen: false
         }
     }
 
+    navToggleClickHandler = () => {
+        this.setState(
+            (prevState) => {
+                return {navDrawerOpen: !prevState.navDrawerOpen}
+            })
+    }
+
     render() {
+        let navDrawerButtonComponent
+
+        if(!this.state.navDrawerOpen) {
+            navDrawerButtonComponent = <NavDrawerButtonComponent click={this.navToggleClickHandler} />
+        }
         return (
-            <div className="aboutBackground" id="about">
+            <>
+            <NavDrawer activeLink={this.state.activeLink} click={this.navToggleClickHandler} navDrawerOpen={this.state.navDrawerOpen} />
+
+        <div className="aboutBackground" id="about">
                 <div className="aboutContent">
                     <div className="aboutHeader">
                         <h2>About Me</h2>
                         <div className="navWrapper">
-                            <NavDrawerButtonComponent click={this.props.navToggleClickHandler} />
+                            {navDrawerButtonComponent}
                         </div>
                     </div>
 
@@ -36,7 +53,7 @@ class About extends Component {
                 </div>
                 <Nav activeLink={this.state.activeLink}/>
             </div>
-
+</>
         )
     }
 }

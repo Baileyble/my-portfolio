@@ -1,23 +1,40 @@
 import React, {Component} from "react";
 import Nav from "./NavComponent";
 import NavDrawerButtonComponent from "./NavDrawerButtonComponent";
+import NavDrawer from "./NavDrawerComponent";
 
 class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeLink: "contact"
+            activeLink: "contact",
+            navDrawerOpen: false
         }
     }
 
+    navToggleClickHandler = () => {
+        this.setState(
+            (prevState) => {
+                return {navDrawerOpen: !prevState.navDrawerOpen}
+            })
+    }
+
     render() {
+        let navDrawerButtonComponent
+
+        if(!this.state.navDrawerOpen) {
+            navDrawerButtonComponent = <NavDrawerButtonComponent click={this.navToggleClickHandler} />
+        }
         return (
-            <div className="contactBackground" id="contact">
+            <>
+                <NavDrawer activeLink={this.state.activeLink} click={this.navToggleClickHandler} navDrawerOpen={this.state.navDrawerOpen} />
+
+                <div className="contactBackground" id="contact">
                 <div className="contactContent">
                     <div className="contactHeader">
                         <h2>Contact Me</h2>
                         <div className="navWrapper">
-                            <NavDrawerButtonComponent click={this.props.navToggleClickHandler} />
+                            {navDrawerButtonComponent}
                         </div>
                     </div>
 
@@ -57,7 +74,7 @@ class Contact extends Component {
                 </div>
                 <Nav activeLink={this.state.activeLink}/>
             </div>
-
+</>
         )
     }
 }

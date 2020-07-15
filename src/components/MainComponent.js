@@ -8,29 +8,14 @@ import NavDrawer from "./NavDrawerComponent";
 
 
 class Main extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            navDrawerOpen: false,
-            activeLink: ""
-        }
-    }
-
-
-
-
     render() {
-
-
-
         return (
             <>
-                {navDrawer}
                 <Home />
-                <Code navToggleClickHandler={this.navToggleClickHandler} />
-                <Design navToggleClickHandler={this.navToggleClickHandler} />
-                <About navToggleClickHandler={this.navToggleClickHandler} />
-                <Contact navToggleClickHandler={this.navToggleClickHandler} />
+                <Code />
+                <Design />
+                <About />
+                <Contact />
             </>
         )
 
