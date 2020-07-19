@@ -75,9 +75,14 @@
 .contactColLeft
   float: left
   padding-right: 15vw
+  display: inline-block
+  @media (max-width: #{$tablet-width})
+    width: 100%
+
 
 .contactColRight
-  float: right
+  //float: right
+  display: inline-block
   @media (max-width: #{$tablet-width})
     float: left
     margin-top: -16px

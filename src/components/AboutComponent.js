@@ -40,7 +40,7 @@ class About extends Component {
 
 
                     <div className="aboutContainer">
-                        <div className="aboutImage" style={{backgroundImage: "url(IMG_2186.JPG)"}}/>
+                        <div className="aboutImage" style={{backgroundImage: "url(https://live.staticflickr.com/65535/50131016147_68e5949a45_h.jpg)"}}/>
                         <div className="aboutText">
                         <h3>Hi, I'm Bailey</h3>
                         <p>I’m a Frontend Developer & Designer based out of NC. Originally starting as a UX Designer after attending Devmountain’s UX Design bootcamp, I have decided to transition into a Frontend Developer role becoming a jack of all trades when it comes to digital product development. Combining my experience with UX/UI skills such as user research, ideation and designing with my knowledge of HTML, CSS, JS & React to be able to create amazing digital experiences.</p>

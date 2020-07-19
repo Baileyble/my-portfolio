@@ -2,7 +2,7 @@ export const DESIGNPROJECTS = [
     {
         id: 0,
         name: "Safe Eats SLC",
-        image: "/projectImages/SafeEatsMockup.jpg",
+        image: "https://live.staticflickr.com/65535/50131017332_2a6c47bbff_c.jpg",
         description: "Safe Eats SLC is an app that allows users to access restaurant health ratings in Salt Lake City, Utah. It was created as a UX design project during a UX design bootcamp at Devmountain.",
         link: "https://uxdesign.cc/safe-eats-slc-a-ux-case-study-5a90916390ac",
         linkText: "Read The Case Study"
@@ -10,7 +10,7 @@ export const DESIGNPROJECTS = [
     {
         id: 1,
         name: "Ecopost",
-        image: "/projectImages/EcopostThumbnail.jpg",
+        image: "https://live.staticflickr.com/65535/50131017277_2e7858353c_b.jpg",
         description: "Ecopost was designed as a UX design project for Devmountain's UX design bootcamp. Ecopost is website dedicated to making the process of recycling electronics as convenient as possible. Through our website users would be able to order a box to ship their device to be recycled.",
         link: "https://medium.com/bailey-le/ecopost-a-ux-case-study-8563269982f",
         linkText: "Read The Case Study"

@@ -689,10 +689,16 @@
 .contactColLeft {
   float: left;
   padding-right: 15vw;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .contactColLeft {
+    width: 100%;
+  }
 }
 
 .contactColRight {
-  float: right;
+  display: inline-block;
 }
 @media (max-width: 768px) {
   .contactColRight {
