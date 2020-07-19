@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/baileyle.dev/static/css/main.478a3beb.chunk.css",
+    "main.js": "/baileyle.dev/static/js/main.cac126ed.chunk.js",
+    "main.js.map": "/baileyle.dev/static/js/main.cac126ed.chunk.js.map",
+    "runtime-main.js": "/baileyle.dev/static/js/runtime-main.7f5ad829.js",
+    "runtime-main.js.map": "/baileyle.dev/static/js/runtime-main.7f5ad829.js.map",
+    "static/js/2.0c607222.chunk.js": "/baileyle.dev/static/js/2.0c607222.chunk.js",
+    "static/js/2.0c607222.chunk.js.map": "/baileyle.dev/static/js/2.0c607222.chunk.js.map",
+    "index.html": "/baileyle.dev/index.html",
+    "precache-manifest.2d4b38741380fa84b2426c7eee106a67.js": "/baileyle.dev/precache-manifest.2d4b38741380fa84b2426c7eee106a67.js",
+    "service-worker.js": "/baileyle.dev/service-worker.js",
+    "static/css/main.478a3beb.chunk.css.map": "/baileyle.dev/static/css/main.478a3beb.chunk.css.map",
+    "static/js/2.0c607222.chunk.js.LICENSE.txt": "/baileyle.dev/static/js/2.0c607222.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f5ad829.js",
+    "static/js/2.0c607222.chunk.js",
+    "static/css/main.478a3beb.chunk.css",
+    "static/js/main.cac126ed.chunk.js"
+  ]
+}
