@@ -694,6 +694,7 @@
 @media (max-width: 768px) {
   .contactColLeft {
     width: 100%;
+    padding-right: 0;
   }
 }
 
@@ -707,9 +708,6 @@
   }
 }
 
-html {
-  overflow: hidden;
-}
 @media (max-width: 768px) {
   html {
     scroll-snap-type: y mandatory;
@@ -718,7 +716,6 @@ html {
 
 body {
   overscroll-behavior: none;
-  overflow: hidden;
 }
 
 h1, h2, h3, h4 {
