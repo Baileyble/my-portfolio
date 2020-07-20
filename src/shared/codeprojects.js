@@ -19,5 +19,12 @@ export const CODEPROJECTS = [
         image: "https://live.staticflickr.com/65535/50131067037_cfa2046dc2_h.jpg",
         link: "https://github.com/Baileyble/finance-portal",
         type: "Project"
+    },
+    {
+        id: 3,
+        name: "baileyle.dev",
+        image: "https://live.staticflickr.com/65535/50131226943_de5c143cd3_z.jpg",
+        link: "https://github.com/Baileyble/Baileyble.github.io",
+        type: "Project"
     }
 ]

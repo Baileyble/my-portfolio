@@ -45,9 +45,9 @@ class About extends Component {
                         <h3>Hi, I'm Bailey</h3>
                         <p>I’m a Frontend Developer & Designer based out of NC. Originally starting as a UX Designer after attending Devmountain’s UX Design bootcamp, I have decided to transition into a Frontend Developer role becoming a jack of all trades when it comes to digital product development. Combining my experience with UX/UI skills such as user research, ideation and designing with my knowledge of HTML, CSS, JS & React to be able to create amazing digital experiences.</p>
 
-                        <p class="secondParagraph" >Currently, I am working as a UX/UI Designer for Quintevents in Charlotte, NC. I am now searching for new opportunities as a Front-End Developer. </p>
+                        <p className="secondParagraph" >Currently, I am working as a UX/UI Designer for Quintevents in Charlotte, NC. I am now searching for new opportunities as a Front-End Developer. </p>
 
-                            <h5><a target="_blank" href="">Resume</a></h5>
+                            <h5><a target="_blank" href="https://pdfhost.io/v/mygH.afyE_BaileyLeResumeFinalpdf.pdf">Resume</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://github.com/Baileyble">Github</a></h5>
                     </div>
                     </div>
                 </div>
