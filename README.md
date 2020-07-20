@@ -4,4 +4,4 @@
 
 <p>View the page here!</p>
 
-<p><a href="baileyle.dev">baileyle.dev</a></p>
+<p><a href="https://baileyle.dev/">baileyle.dev</a></p>
