@@ -26,5 +26,12 @@ export const CODEPROJECTS = [
         image: "https://live.staticflickr.com/65535/50131226943_de5c143cd3_z.jpg",
         link: "https://github.com/Baileyble/Baileyble.github.io",
         type: "Project"
+    },
+    {
+        id: 4,
+        name: "Constrained Writing Challenge",
+        image: "https://live.staticflickr.com/65535/50273400781_30ea649745_h.jpg",
+        link: "https://codepen.io/Baiey/pen/rNemeRG",
+        type: "Project"
     }
 ]
