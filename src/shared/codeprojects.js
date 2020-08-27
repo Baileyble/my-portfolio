@@ -29,7 +29,7 @@ export const CODEPROJECTS = [
     },
     {
         id: 4,
-        name: "Constrained Writing Challenge",
+        name: "Constrained Writing",
         image: "https://live.staticflickr.com/65535/50273400781_30ea649745_h.jpg",
         link: "https://codepen.io/Baiey/pen/rNemeRG",
         type: "Challenge"
